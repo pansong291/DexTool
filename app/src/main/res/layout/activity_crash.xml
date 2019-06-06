@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+ 
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:lines="3"
+        android:hint="刚刚程序异常崩溃，十分抱歉给您带来不便，请描述您刚才的操作以帮助开发者修复bug"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textColorHint="#858585"/>
+  
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right">
+  
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="算了"
+            android:textColor="#000000"/>
+   
+        <Button
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"/>
+    
+    </LinearLayout>
+ 
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="错误详情："
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"/>
+  
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+  
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+   
+            <EditText
+                android:layout_height="wrap_content"
+                android:text="文本"
+                android:layout_width="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/activityerrorTextView1"
+                android:textColor="#000000"
+                android:inputType="textMultiLine"/>
+    
+        </LinearLayout>
+  
+    </ScrollView>
+ 
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="设置">
+  
+  <PreferenceCategory
+   android:title="基本选项">
+   
+   <ListPreference
+    android:key="list1"
+    android:title="选项列表"
+    android:summary="选项说明"
+    android:dialogTitle="选项对话框标题"
+    android:entries="@array/entrie1"
+    android:entryValues="@array/entryValue1"
+    android:defaultValue="0"/>
+   
+   <CheckBoxPreference
+    android:key="checkBox1"
+    android:title="复选框"
+    android:summaryOn="复选框开启"
+    android:summaryOff="复选框关闭"
+    android:defaultValue="false"/>
+   
+   <EditTextPreference
+    android:key="edt1"
+    android:title="输入框"
+    android:summary="输入框说明"
+    android:dialogTitle="对话框标题"
+    android:defaultValue="默认"/>
+   
+   <Preference
+    android:key="aboutme"
+    android:title="关于"
+    android:summary="关于说明"/>
+    
+	</PreferenceCategory>
+	
+ </PreferenceScreen>
+<!--
+android:key  选项的名称或键,类似id
+android:title  选项的标题
+android:summary  选项的简短摘要
+android:entries  可将选项设置成列表项的文本
+android:entryValues  定义每个列表项的值。注意：每个列表项有一些文本和一个值。文本由entries定义，值由entryValues定义。
+android:dialogTitle  对话框的标题，在视图显示为模态对话框时使用
+android:defaultValue  项列表中选项的默认值
+-->

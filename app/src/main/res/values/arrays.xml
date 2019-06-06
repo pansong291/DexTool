@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+ <string-array
+  name="entrie1">
+ <item>选项0</item>
+ <item>选项1</item>
+ </string-array>
+ 
+ <string-array
+  name="entryValue1">
+  <item>0</item>
+  <item>1</item>
+ </string-array>
+ 
+</resources>

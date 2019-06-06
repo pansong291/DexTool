@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:paddingLeft="8dp"
+	android:paddingRight="8dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<pansong291.dextool.view.CmdTextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textSize="11sp"
+			android:textColor="#FF000000"
+			android:id="@+id/txt_out"/>
+
+		<pansong291.dextool.view.VerticalSeekBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@id/txt_out"
+			android:layout_alignTop="@id/txt_out"
+			android:id="@+id/vsb_out"
+			android:thumb="@drawable/seekbar_thumb"
+			android:progressDrawable="@drawable/seekbar_progress_drawable"
+			android:visibility="gone"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
